@@ -1,4 +1,4 @@
-class WpmCli < Formula
+class Wpm < Formula
   desc "A terminal-based typing speed test"
   homepage "https://github.com/truls27a/wpm"
   version "0.1.2"
