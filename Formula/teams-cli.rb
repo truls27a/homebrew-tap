@@ -5,21 +5,21 @@
 class TeamsCli < Formula
   desc "Microsoft Teams CLI"
   homepage "https://github.com/truls27a/teams-cli"
-  version "0.3.0"
+  version "0.3.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/truls27a/teams-cli/releases/download/v0.3.0/teams-cli_0.3.0_darwin_amd64.tar.gz"
-      sha256 "133face87d655a8c0a9a8cb37edcda7847992035bce2ab90f8bab72cc9fa10e7"
+      url "https://github.com/truls27a/teams-cli/releases/download/v0.3.1/teams-cli_0.3.1_darwin_amd64.tar.gz"
+      sha256 "cdb362a68ba2b1ea9a3aabcace88da9608f1bc8616e14bb73a3556caa9638821"
 
       define_method(:install) do
         bin.install "teams"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/truls27a/teams-cli/releases/download/v0.3.0/teams-cli_0.3.0_darwin_arm64.tar.gz"
-      sha256 "ee51229fc7513ff2fbcdfd7c75750c3559268cb59be2e95fe32dc82cf635db23"
+      url "https://github.com/truls27a/teams-cli/releases/download/v0.3.1/teams-cli_0.3.1_darwin_arm64.tar.gz"
+      sha256 "66ad386ecca914f70baa6cf90176d4150772c2af54daa7fe9d7f2ead2f208464"
 
       define_method(:install) do
         bin.install "teams"
@@ -29,15 +29,15 @@ class TeamsCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/truls27a/teams-cli/releases/download/v0.3.0/teams-cli_0.3.0_linux_amd64.tar.gz"
-      sha256 "34eab168f5355891a82db75a8f8fdffff5d9d9e84986d776dbaeae2ca8d3a0b9"
+      url "https://github.com/truls27a/teams-cli/releases/download/v0.3.1/teams-cli_0.3.1_linux_amd64.tar.gz"
+      sha256 "01beb1ddb9ff41d48439a754475cdcbe81823ceabc233ac998c1392f9ed96cbe"
       define_method(:install) do
         bin.install "teams"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/truls27a/teams-cli/releases/download/v0.3.0/teams-cli_0.3.0_linux_arm64.tar.gz"
-      sha256 "0b3c24beebdbbf6a227c32f23013e00a20c1d18e29adc6c1ba81b3604532f195"
+      url "https://github.com/truls27a/teams-cli/releases/download/v0.3.1/teams-cli_0.3.1_linux_arm64.tar.gz"
+      sha256 "a7141404cf6e02473fe807d0c19b6c26a660ff4b8752ba530949dce66174b331"
       define_method(:install) do
         bin.install "teams"
       end
